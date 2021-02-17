@@ -1,0 +1,76 @@
+* {
+  vertical-align: baseline;
+  font-family: "icomoon";
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(0, 42, 80);
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: smaller;
+  padding: 50px;
+  color: rgb(0, 0, 0);
+  background: rgb(207, 207, 207);
+}
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(77, 209, 211),
+    rgba(9, 37, 51)
+  );
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 220px;
+}
+
+.navbar {
+  display: inline-block;
+  margin-left: 450px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.navbar ul {
+  float: right;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 20px;
+  position: relative;
+}

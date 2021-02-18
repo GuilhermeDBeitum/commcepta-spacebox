@@ -36,7 +36,7 @@ body {
   font-size: smaller;
   padding: 50px;
   color: rgb(0, 0, 0);
-  background: rgb(207, 207, 207);
+  background-color: rgba(217, 217, 217);
 }
 
 header {
@@ -48,8 +48,8 @@ header {
   padding: 10px;
   background-image: linear-gradient(
     to right,
-    rgba(77, 209, 211),
-    rgba(9, 37, 51)
+    rgba(76, 209, 208),
+    rgba(9, 35, 48)
   );
 }
 
@@ -73,4 +73,146 @@ header {
   display: inline;
   margin-left: 20px;
   position: relative;
+}
+
+.team-card {
+  height: 100px;
+  background-color: rgb(241, 241, 239);
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team-card:hover {
+  background-color: rgba(0, 42, 80);
+}
+
+.team-card:hover p {
+  color: rgb(255, 255, 255);
+}
+
+.team-card img {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  padding: 16px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.team-card-cicle {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  text-align: right;
+}
+
+.team-card p {
+  display: inline-block;
+}
+
+.team-card-title {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 35px;
+}
+
+.team-card-content {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 50px;
+  color: rgb(128, 128, 128);
+}
+
+.team-card-high-content1 {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 27px;
+  margin-left: 10px;
+  color: rgb(128, 128, 128);
+}
+
+.team-card-high-content2 {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 45px;
+  margin-left: 5px;
+  color: rgb(128, 128, 128);
+}
+
+.team-card-high-content3 {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 63px;
+  margin-left: 10px;
+  color: rgb(128, 128, 128);
+}
+
+.team-card-value1 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 27px;
+  margin-left: 50px;
+}
+
+.team-card-value2 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 45px;
+  margin-left: 50px;
+}
+
+.team-card-value3 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 63px;
+  margin-left: 50px;
+}
+
+.team-card-key {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 35px;
+}
+
+.container {
+  padding-top: 15px;
+  margin-left: 179px;
+}
+
+.row {
+  margin: 0px;
+  margin-left: 12px;
+}
+
+.col {
+  width: 24.5%;
+  float: left;
+  margin-top: 15px;
+}
+
+.col-12 {
+  width: 78.5%;
+  margin-top: 10px;
+}
+
+.col:first-child {
+  margin-right: 2%;
+}
+
+.col:last-child {
+  margin-left: 2%;
+}
+
+.no-gutters {
+  margin: -12px;
 }

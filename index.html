@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script type="text/javascript" src="assets/dados/dados.json"></script>
     <script type="text/javascript" src="assets/js/action.js"></script>
     <title>SpaceBox</title>
   </head>
 
-  <body>
+  <body onload="loadAction()">
     <header>
       <div class="logo">
         <img src="assets/img/logo.webp" alt="logo" width="110" height="35" />
@@ -26,101 +27,11 @@
     </header>
 
     <section>
-      <div class="container">
-        <div class="col-12">
-          <article class="team-card">
-            <img src="assets/img/logo.webp" alt="Team" />
-            <p class="team-card-high-content1">NOME:</p>
-            <p class="team-card-value1">Alberto</p>
-            <p class="team-card-high-content2">CARGO:</p>
-            <p class="team-card-value2">Presidente</p>
-            <p class="team-card-high-content3">IDADE:</p>
-            <p class="team-card-value3">46</p>
-          </article>
-        </div>
-      </div>
+      <div class="container" id="mainData"></div>
     </section>
 
     <section class="no-gutters">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Alberto</p>
-              <p class="team-card-content">Presidente</p>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="team-card">
-              <img src="assets/img/logo.webp" alt="Team" />
-              <p class="team-card-title">Nome</p>
-              <p class="team-card-content">Cargo</p>
-            </article>
-          </div>
-        </div>
-      </div>
+      <div class="container" id="teamData"></div>
     </section>
   </body>
 </html>

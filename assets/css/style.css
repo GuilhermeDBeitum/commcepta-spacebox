@@ -93,6 +93,9 @@ header {
 }
 
 .team-card img {
+  object-fit: cover;
+  width: 300px;
+  height: 337px;
   display: inline-block;
   width: 68px;
   height: 68px;
@@ -102,6 +105,7 @@ header {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  overflow: auto;
 }
 
 .team-card-cicle {
@@ -157,7 +161,7 @@ header {
   position: absolute;
   font-weight: bold;
   font-size: 12px;
-  padding-top: 27px;
+  padding-top: 25px;
   margin-left: 50px;
 }
 
@@ -165,7 +169,7 @@ header {
   position: absolute;
   font-weight: bold;
   font-size: 12px;
-  padding-top: 45px;
+  padding-top: 43px;
   margin-left: 50px;
 }
 
@@ -173,7 +177,7 @@ header {
   position: absolute;
   font-weight: bold;
   font-size: 12px;
-  padding-top: 63px;
+  padding-top: 61px;
   margin-left: 50px;
 }
 
@@ -184,18 +188,31 @@ header {
   padding-top: 35px;
 }
 
+.mark {
+  position: absolute;
+  text-align: center;
+  width: 18px;
+  margin-top: 18px;
+  margin-left: 68px;
+  border-radius: 100%;
+  background-color: rgb(77, 209, 211);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
 .container {
   padding-top: 15px;
-  margin-left: 179px;
+  margin-left: 180px;
 }
 
 .row {
-  margin: 0px;
-  margin-left: 12px;
+  margin-left: -8px;
 }
 
 .col {
-  width: 24.5%;
+  width: 22.7%;
   float: left;
   margin-top: 15px;
 }

@@ -1,3 +1,13 @@
+function setCardActive(evt) {
+  var i, tablinks;
+
+  tablinks = document.getElementsByClassName("card-active");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  evt.currentTarget.className += " active";
+}
+
 function getCard(id) {
   const mData = data[id - 1];
   const key = 1;
@@ -10,14 +20,15 @@ function createCard(data) {
       (team) => `     
           <div class="row">
             <div class="col id="cardID" onclick="getCard(${team.id})">
-              <article class="team-card">
-              <span class="mark">${team.id}</span>
-                <img src="${team.foto}" alt="Team picture" />
-                <p class="team-card-title">${team.nome}</p>
-                <p class="team-card-content">${team.cargo}</p>
+              <article class="team-card card-active"  onclick="setCardActive(event, '${team.id}')">
+                 <span class="mark">${team.id}</span>
+                 <img src="${team.foto}" alt="Team picture" />
+                 <p class="team-card-title">${team.nome}</p>
+                 <p class="team-card-content">${team.cargo}</p> 
               </article>
             </div>
           </div>
+          <div id="${team.id}" class="tabcontent"></div>  
        `
     )
     .join("");
@@ -44,13 +55,6 @@ function createMainCard(mData, key) {
     return `   
     <div class="col-12">
       <article class="team-card">
-        <img src="${data[0].foto}" alt="Team" />
-        <p class="team-card-high-content1">NOME:</p>
-        <p class="team-card-value1">${data[0].nome}</p>
-        <p class="team-card-high-content2">CARGO:</p>
-        <p class="team-card-value2">${data[0].cargo}</p>
-        <p class="team-card-high-content3">IDADE:</p>
-        <p class="team-card-value3">${data[0].idade}</p>
       </article>
     </div>
      `;

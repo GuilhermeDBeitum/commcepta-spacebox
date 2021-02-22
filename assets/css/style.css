@@ -51,16 +51,17 @@ header {
     rgba(76, 209, 208),
     rgba(9, 35, 48)
   );
+  z-index: 100;
 }
 
 .logo {
   display: inline-block;
-  margin-left: 220px;
+  margin-left: 180px;
 }
 
 .navbar {
   display: inline-block;
-  margin-left: 450px;
+  margin-left: 250px;
   padding-bottom: 10px;
   font-size: 12px;
 }
@@ -77,7 +78,7 @@ header {
 
 .team-card {
   cursor: pointer;
-  height: 100px;
+  height: 150px;
   background-color: rgb(241, 241, 239);
   -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
@@ -92,8 +93,6 @@ header {
 
 .team-card img {
   object-fit: cover;
-  width: 300px;
-  height: 337px;
   display: inline-block;
   width: 68px;
   height: 68px;
@@ -188,7 +187,6 @@ header {
 .mark {
   font-weight: lighter;
   font-weight: bolder;
-
   font-weight: 700;
   position: absolute;
   text-align: center;
@@ -214,13 +212,13 @@ header {
 }
 
 .col {
-  width: 22.7%;
+  width: 32.7%;
   float: left;
   margin-top: 15px;
 }
 
 .col-12 {
-  width: 78.5%;
+  width: 72%;
   margin-top: 10px;
 }
 
@@ -234,4 +232,381 @@ header {
 
 .no-gutters {
   margin: -12px;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .logo {
+    display: inline-block;
+    margin-left: 28%;
+  }
+  .navbar {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .container {
+    padding-top: 55px;
+    height: 120px;
+    margin-left: -12%;
+  }
+
+  .col {
+    width: 49.7%;
+  }
+
+  .col-12 {
+    margin-left: -10px;
+    width: 52.2%;
+    margin-top: 25px;
+  }
+
+  .col:first-child {
+    margin-right: 12%;
+  }
+
+  .col:last-child {
+    margin-left: 18%;
+  }
+
+  .no-gutters {
+    margin: -12px;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo {
+    display: inline-block;
+    margin-left: 33%;
+  }
+  .navbar {
+    display: inline-block;
+    margin-left: 17.5%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .container {
+    padding-top: 55px;
+    height: 120px;
+    margin-left: 92px;
+  }
+
+  .col {
+    width: 38.7%;
+  }
+
+  .col-12 {
+    margin-left: 0%;
+    width: 83.2%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 580px) and (max-width: 768px) {
+  .team-card {
+    cursor: pointer;
+    height: 135px;
+    width: 79px;
+    background-color: rgb(241, 241, 239);
+    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-card img {
+    object-fit: cover;
+    width: 300px;
+    height: 337px;
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    padding: 6px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: auto;
+  }
+
+  .mark {
+    font-weight: lighter;
+    font-weight: bolder;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    width: 10px;
+    margin-top: 12px;
+    margin-left: 66px;
+    border-radius: 100%;
+    background-color: rgb(77, 209, 211);
+    color: rgb(0, 0, 0);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+
+  .team-card-title {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 1px;
+    margin-left: 20px;
+  }
+
+  .team-card-content {
+    position: absolute;
+    font-size: 8px;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  .team-card-high-content1 {
+    position: absolute;
+    font-size: 7px;
+    padding-top: 5px;
+    margin-left: 5px;
+    color: rgb(128, 128, 128);
+  }
+
+  .team-card-high-content2 {
+    position: absolute;
+    font-size: 7px;
+    padding-top: 20px;
+    margin-left: 5px;
+    color: rgb(128, 128, 128);
+  }
+
+  .team-card-high-content3 {
+    position: absolute;
+    font-size: 7px;
+    padding-top: 35px;
+    margin-left: 5px;
+    color: rgb(128, 128, 128);
+  }
+
+  .team-card-value1 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 7px;
+    padding-top: 5px;
+    margin-left: 30px;
+  }
+
+  .team-card-value2 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 7px;
+    padding-top: 20px;
+    margin-left: 30px;
+  }
+
+  .team-card-value3 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 7px;
+    padding-top: 35px;
+    margin-left: 30px;
+  }
+
+  .container {
+    margin-left: 36%;
+  }
+
+  .row {
+    margin-left: -25%;
+  }
+
+  .col-12 {
+    width: 78.5%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 966px) and (max-width: 1400px) {
+  .logo {
+    display: inline-block;
+    margin-left: 218px;
+  }
+
+  .navbar {
+    display: inline-block;
+    margin-left: 415px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .navbar ul {
+    float: right;
+  }
+
+  .navbar ul li {
+    display: inline;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  .team-card {
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(241, 241, 239);
+    -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .col article.active {
+    background-color: rgba(0, 42, 80);
+    color: rgb(255, 255, 255);
+  }
+
+  .team-card img {
+    object-fit: cover;
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    padding: 16px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: auto;
+  }
+
+  .team-card-cicle {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    text-align: right;
+  }
+
+  .team-card p {
+    display: inline-block;
+  }
+
+  .team-card-title {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 35px;
+  }
+
+  .team-card-content {
+    position: absolute;
+    font-size: 10px;
+    padding-top: 50px;
+  }
+
+  .team-card-high-content1 {
+    position: absolute;
+    font-size: 10px;
+    padding-top: 27px;
+    margin-left: 10px;
+    color: rgb(128, 128, 128);
+  }
+
+  .team-card-high-content2 {
+    position: absolute;
+    font-size: 10px;
+    padding-top: 45px;
+    margin-left: 5px;
+    color: rgb(128, 128, 128);
+  }
+
+  .team-card-high-content3 {
+    position: absolute;
+    font-size: 10px;
+    padding-top: 63px;
+    margin-left: 10px;
+    color: rgb(128, 128, 128);
+  }
+
+  .team-card-value1 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 25px;
+    margin-left: 50px;
+  }
+
+  .team-card-value2 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 43px;
+    margin-left: 50px;
+  }
+
+  .team-card-value3 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 61px;
+    margin-left: 50px;
+  }
+
+  .team-card-key {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 35px;
+  }
+
+  .mark {
+    font-weight: lighter;
+    font-weight: bolder;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    width: 18px;
+    margin-top: 18px;
+    margin-left: 68px;
+    border-radius: 100%;
+    background-color: rgb(77, 209, 211);
+    color: rgb(0, 0, 0);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+
+  .container {
+    padding-top: 15px;
+    margin-left: 180px;
+  }
+
+  .row {
+    margin-left: -8px;
+  }
+
+  .col {
+    width: 23.7%;
+    margin-top: 15px;
+  }
+
+  .col-12 {
+    width: 76.5%;
+    margin-top: 10px;
+  }
+
+  .col:first-child {
+    margin-right: -0.5%;
+  }
+
+  .col:last-child {
+    margin-left: 2%;
+  }
+
+  .no-gutters {
+    margin-top: -22px;
+  }
 }

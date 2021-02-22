@@ -1,5 +1,5 @@
 function setCardActive(evt) {
-  var i, tablinks;
+  let i, tablinks;
 
   tablinks = document.getElementsByClassName("card-active");
   for (i = 0; i < tablinks.length; i++) {
@@ -28,7 +28,7 @@ function createCard(data) {
               </article>
             </div>
           </div>
-          <div id="${team.id}" class="tabcontent"></div>  
+        <div id="${team.id}" class="tabcontent"></div>  
        `
     )
     .join("");
@@ -54,21 +54,20 @@ function createMainCard(mData, key) {
   } else {
     return `   
     <div class="col-12">
-      <article class="team-card">
-      </article>
+      <article class="team-card"></article>
     </div>
      `;
   }
 }
 
 function renderCard(data) {
-  var card = document.body.querySelector("#teamData");
+  let card = document.body.querySelector("#teamData");
   const markup = createCard(data);
   card.innerHTML = markup;
 }
 
 function renderMainCard(mData, key) {
-  var main = document.body.querySelector("#mainData");
+  let main = document.body.querySelector("#mainData");
   const markup = createMainCard(mData, key);
   main.innerHTML = markup;
 }
